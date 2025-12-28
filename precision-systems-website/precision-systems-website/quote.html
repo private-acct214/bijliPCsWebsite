@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get a custom quote for your PC build, home technology setup, or business deployment. We respond within 24 hours.">
+  <title>Get a Quote | Precision Systems</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">⚡</div>
+        <span>Precision Systems</span>
+      </a>
+      
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="full-service.html" class="nav-link">Full-Service</a></li>
+        <li><a href="industries.html" class="nav-link">Industries</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li class="nav-cta"><a href="quote.html" class="btn btn-primary btn-sm">Get a Quote</a></li>
+      </ul>
+      
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Quote Section -->
+  <section class="quote-section" style="padding-top: 140px; min-height: 100vh;">
+    <div class="container">
+      <div class="quote-container">
+        <div class="section-header fade-in">
+          <span class="section-label">Start Your Project</span>
+          <h1>Get a Quote</h1>
+          <p>Tell us what you're looking for and we'll get back to you within 24 hours with a custom quote.</p>
+        </div>
+        
+        <!-- Quote Type Selector -->
+        <div class="quote-type-selector fade-in">
+          <button type="button" class="quote-type-btn active" data-type="consumer">
+            <h4>🏠 Home / Personal</h4>
+            <p>Custom PCs, home theatre, NAS, upgrades</p>
+          </button>
+          <button type="button" class="quote-type-btn" data-type="business">
+            <h4>🏢 Business / Studio</h4>
+            <p>Multi-system deployments, full-service setup</p>
+          </button>
+        </div>
+        
+        <!-- Quote Form -->
+        <form id="quote-form" class="fade-in">
+          <!-- Common Fields -->
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="name" required placeholder="John Smith">
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required placeholder="john@example.com">
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+            </div>
+            
+            <div class="form-group">
+              <label for="zip">ZIP Code *</label>
+              <input type="text" id="zip" name="zip" required placeholder="12345" maxlength="10">
+            </div>
+          </div>
+          
+          <!-- Consumer-Specific Fields -->
+          <div id="consumer-fields">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="use-case">Primary Use *</label>
+                <select id="use-case" name="use_case">
+                  <option value="">Select primary use...</option>
+                  <option value="gaming">Gaming</option>
+                  <option value="creative">Creative Work (Video, Design, 3D)</option>
+                  <option value="office">Office / Productivity</option>
+                  <option value="home-theatre">Home Theatre Setup</option>
+                  <option value="nas">NAS / Storage Solution</option>
+                  <option value="networking">Home Networking</option>
+                  <option value="upgrade">Upgrade / Repair Existing System</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="budget-consumer">Budget Range *</label>
+                <select id="budget-consumer" name="budget">
+                  <option value="">Select budget range...</option>
+                  <option value="500-800">$500 - $800</option>
+                  <option value="800-1200">$800 - $1,200</option>
+                  <option value="1200-1800">$1,200 - $1,800</option>
+                  <option value="1800-2500">$1,800 - $2,500</option>
+                  <option value="2500+">$2,500+</option>
+                  <option value="flexible">Flexible / Not Sure</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="timeline-consumer">Timeline</label>
+                <select id="timeline-consumer" name="timeline">
+                  <option value="">Select timeline...</option>
+                  <option value="asap">ASAP</option>
+                  <option value="2-weeks">Within 2 weeks</option>
+                  <option value="month">Within a month</option>
+                  <option value="flexible">Flexible</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="preference">Brand Preference</label>
+                <select id="preference" name="preference">
+                  <option value="">No preference</option>
+                  <option value="amd">AMD (CPU)</option>
+                  <option value="intel">Intel (CPU)</option>
+                  <option value="nvidia">NVIDIA (GPU)</option>
+                  <option value="amd-gpu">AMD (GPU)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Business-Specific Fields -->
+          <div id="business-fields" style="display: none;">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="company">Company Name *</label>
+                <input type="text" id="company" name="company" placeholder="Acme Design Studio">
+              </div>
+              
+              <div class="form-group">
+                <label for="systems">Number of Systems *</label>
+                <select id="systems" name="systems">
+                  <option value="">Select quantity...</option>
+                  <option value="1-2">1-2 systems</option>
+                  <option value="3-5">3-5 systems</option>
+                  <option value="6-10">6-10 systems</option>
+                  <option value="11-20">11-20 systems</option>
+                  <option value="20+">20+ systems</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="industry">Industry *</label>
+                <select id="industry" name="industry">
+                  <option value="">Select industry...</option>
+                  <option value="design">Graphic Design / Creative</option>
+                  <option value="engineering">Engineering / CAD</option>
+                  <option value="game-dev">Game Development</option>
+                  <option value="video">Video Production</option>
+                  <option value="architecture">Architecture</option>
+                  <option value="general-business">General Business / Office</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="budget-business">Budget Range (Total) *</label>
+                <select id="budget-business" name="budget_business">
+                  <option value="">Select budget range...</option>
+                  <option value="5k-10k">$5,000 - $10,000</option>
+                  <option value="10k-25k">$10,000 - $25,000</option>
+                  <option value="25k-50k">$25,000 - $50,000</option>
+                  <option value="50k+">$50,000+</option>
+                  <option value="tbd">To Be Determined</option>
+                </select>
+              </div>
+              
+              <div class="form-group full-width">
+                <label for="software">Primary Software Used</label>
+                <input type="text" id="software" name="software" placeholder="e.g., Adobe Creative Suite, AutoCAD, SolidWorks, Unreal Engine">
+              </div>
+              
+              <div class="form-group">
+                <label for="timeline-business">Timeline</label>
+                <select id="timeline-business" name="timeline_business">
+                  <option value="">Select timeline...</option>
+                  <option value="urgent">Urgent (ASAP)</option>
+                  <option value="1-month">Within 1 month</option>
+                  <option value="2-3-months">2-3 months</option>
+                  <option value="planning">Planning phase</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="onsite">On-Site Setup Needed?</label>
+                <select id="onsite" name="onsite">
+                  <option value="">Select...</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                  <option value="maybe">Maybe / Discuss</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Common Details Field -->
+          <div class="form-group full-width">
+            <label for="details">Project Details</label>
+            <textarea id="details" name="details" placeholder="Tell us more about your project, specific requirements, or any questions you have..."></textarea>
+          </div>
+          
+          <div class="form-group full-width">
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Submit Quote Request</button>
+          </div>
+          
+          <p style="text-align: center; color: var(--text-muted); font-size: 0.85rem; margin-top: 16px;">
+            We'll respond within 24 hours. Your information is kept confidential.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <div class="nav-logo-icon">⚡</div>
+            <span>Precision Systems</span>
+          </a>
+          <p>Custom-built technology systems for homes, studios, and growing companies. Local service you can trust.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">ig</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#consumer">Consumer PCs</a></li>
+            <li><a href="services.html#business">Business Solutions</a></li>
+            <li><a href="full-service.html">Full-Service Setup</a></li>
+            <li><a href="services.html#home-tech">Home Technology</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Industries</h4>
+          <ul>
+            <li><a href="industries.html#design">Design Studios</a></li>
+            <li><a href="industries.html#engineering">Engineering Firms</a></li>
+            <li><a href="industries.html#gaming">Game Studios</a></li>
+            <li><a href="industries.html#business">Small Business</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="quote.html">Get a Quote</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Precision Systems. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

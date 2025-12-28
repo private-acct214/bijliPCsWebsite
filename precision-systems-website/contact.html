@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Precision Systems for custom PC builds, technology deployments, and support. Local service in [Your City].">
+  <title>Contact Us | Precision Systems</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">⚡</div>
+        <span>Precision Systems</span>
+      </a>
+      
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="full-service.html" class="nav-link">Full-Service</a></li>
+        <li><a href="industries.html" class="nav-link">Industries</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        <li class="nav-cta"><a href="quote.html" class="btn btn-primary btn-sm">Get a Quote</a></li>
+      </ul>
+      
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="about-hero">
+    <div class="container">
+      <span class="section-label fade-in">Get In Touch</span>
+      <h1 class="fade-in">Contact Us</h1>
+      <p class="hero-description fade-in" style="max-width: 600px; margin: 0 auto;">
+        Have questions? Want to discuss a project? We're here to help.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="fade-in">
+          <div class="contact-info-card">
+            <h4>📧 Email</h4>
+            <p><a href="mailto:hello@precisionsystems.com">hello@precisionsystems.com</a></p>
+            <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 8px;">We respond within 24 hours</p>
+          </div>
+          
+          <div class="contact-info-card">
+            <h4>📞 Phone</h4>
+            <p><a href="tel:+15551234567">(555) 123-4567</a></p>
+            <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 8px;">Mon-Fri, 9am-6pm</p>
+          </div>
+          
+          <div class="contact-info-card">
+            <h4>📍 Service Area</h4>
+            <p>[Your City], [Nearby City], [Suburb]<br>and surrounding areas</p>
+            <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 8px;">Local pickup & delivery available</p>
+          </div>
+          
+          <div class="contact-info-card">
+            <h4>💬 Response Time</h4>
+            <p>We typically respond within 24 hours on business days.</p>
+            <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 8px;">For urgent matters, please call</p>
+          </div>
+        </div>
+        
+        <!-- Contact Form -->
+        <div class="fade-in">
+          <div class="card" style="padding: 40px;">
+            <h3 style="margin-bottom: 24px;">Send Us a Message</h3>
+            
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="contact-name">Your Name *</label>
+                <input type="text" id="contact-name" name="name" required placeholder="John Smith">
+              </div>
+              
+              <div class="form-group">
+                <label for="contact-email">Email Address *</label>
+                <input type="email" id="contact-email" name="email" required placeholder="john@example.com">
+              </div>
+              
+              <div class="form-group">
+                <label for="contact-phone">Phone Number</label>
+                <input type="tel" id="contact-phone" name="phone" placeholder="(555) 123-4567">
+              </div>
+              
+              <div class="form-group">
+                <label for="contact-subject">Subject *</label>
+                <select id="contact-subject" name="subject" required>
+                  <option value="">Select a subject...</option>
+                  <option value="quote">Request a Quote</option>
+                  <option value="question">General Question</option>
+                  <option value="support">Support / Existing Customer</option>
+                  <option value="business">Business Inquiry</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="contact-message">Message *</label>
+                <textarea id="contact-message" name="message" required placeholder="How can we help you?"></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Teaser -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Common Questions</span>
+        <h2>Quick Answers</h2>
+      </div>
+      
+      <div class="faq-list fade-in">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How long does a custom PC build take?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Most consumer builds are completed within 5-7 business days after parts arrive. Rush builds are available for an additional fee. Business deployments are scheduled based on project scope.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do you offer warranties?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. We provide a labor warranty on all builds (typically 30-90 days depending on the project). All component parts retain their manufacturer warranties, and we help coordinate warranty claims if issues arise.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can I bring my own parts?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, we can work with parts you've already purchased. We'll verify compatibility and let you know if we spot any issues. Assembly-only services are available.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What areas do you serve?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>We provide local service throughout [Your City] and surrounding areas including [Nearby City] and [Suburb]. Not sure if you're in range? Contact us and we'll let you know.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-5 fade-in">
+        <a href="faq.html" class="btn btn-secondary">View All FAQs →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content fade-in">
+        <h2>Ready to Start Your Project?</h2>
+        <p>Skip the back-and-forth — submit a detailed quote request and we'll get back to you with pricing.</p>
+        <div class="cta-buttons">
+          <a href="quote.html" class="btn btn-primary btn-lg">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <div class="nav-logo-icon">⚡</div>
+            <span>Precision Systems</span>
+          </a>
+          <p>Custom-built technology systems for homes, studios, and growing companies. Local service you can trust.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">ig</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#consumer">Consumer PCs</a></li>
+            <li><a href="services.html#business">Business Solutions</a></li>
+            <li><a href="full-service.html">Full-Service Setup</a></li>
+            <li><a href="services.html#home-tech">Home Technology</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Industries</h4>
+          <ul>
+            <li><a href="industries.html#design">Design Studios</a></li>
+            <li><a href="industries.html#engineering">Engineering Firms</a></li>
+            <li><a href="industries.html#gaming">Game Studios</a></li>
+            <li><a href="industries.html#business">Small Business</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="quote.html">Get a Quote</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Precision Systems. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
